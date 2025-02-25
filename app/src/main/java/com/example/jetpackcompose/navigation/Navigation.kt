@@ -9,7 +9,6 @@ import com.example.jetpackcompose.screens.ProductListScreen
 @Composable
 fun AppNavigation() {
     val navController = androidx.navigation.compose.rememberNavController()
-
     NavHost(navController, startDestination = "list") {
         composable("list") { ProductListScreen(navController) }
         composable("details/{productId}") { backStackEntry ->

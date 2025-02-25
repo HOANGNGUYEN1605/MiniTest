@@ -10,7 +10,8 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            AppNavigation() // Gọi hệ thống điều hướng của ứng dụng
+            // Gọi điều hướng của ứng dụng(tương đương như gọi route)
+            AppNavigation()
         }
     }
 }
