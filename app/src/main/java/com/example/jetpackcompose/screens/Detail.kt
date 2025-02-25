@@ -73,14 +73,14 @@ fun ProductDetailScreen(productId: Int, navController: NavController) {
             }
             Row {
                 Column(modifier = Modifier.weight(1f)) {
-                    Text("Hàng chính hãng")
-                    Text("Giao hàng miễn phí trong 90 phút")
-                    Text("Chính sách đổi trả")
+                    Text("Hàng chính hãng", fontWeight = FontWeight.W700)
+                    Text("Giao hàng miễn phí trong 90 phút", fontWeight = FontWeight.W700)
+                    Text("Chính sách đổi trả", fontWeight = FontWeight.W700)
                 }
                 Column(modifier = Modifier.weight(1f)) {
-                    Text("Bảo hành 12 tháng")  // Đảm bảo `Product` có thuộc tính `cpu`
-                    Text("Hỗ trợ cài đặt miễn phí")  // Đảm bảo `Product` có thuộc tính `graphicsCard`
-                    Text("Chính sách trả góp")  // Đảm bảo `Product` có thuộc tính `screenSize`
+                    Text("Bảo hành 12 tháng", fontWeight = FontWeight.W700)  // Đảm bảo `Product` có thuộc tính `cpu`
+                    Text("Hỗ trợ cài đặt miễn phí",fontWeight = FontWeight.W700)  // Đảm bảo `Product` có thuộc tính `graphicsCard`
+                    Text("Chính sách trả góp",fontWeight = FontWeight.W700)  // Đảm bảo `Product` có thuộc tính `screenSize`
                 }
             }
             //Phần bình luận

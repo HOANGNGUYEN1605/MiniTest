@@ -28,14 +28,14 @@ fun ProductListScreen(navController: NavController) {
             TopAppBar(
                 title = { Text("Product List") },
                 navigationIcon = {
-                    IconButton(onClick = { /* Xử lý sự kiện khi bấm nút back */ }) {
+                    IconButton(onClick = { }) {
                         Icon(Icons.Default.ArrowBack, contentDescription = "Back")
                     }
                 },
                 colors = TopAppBarDefaults.topAppBarColors(containerColor = Color(0xFFDAB6FC)) // Màu tím nhạt
             )
         },
-        bottomBar = { BottomNavigationBar() } // Gọi thanh điều hướng dưới
+        bottomBar = { BottomNavigationBar() }
     ) { paddingValues ->
         LazyColumn(
             contentPadding = paddingValues,
@@ -64,7 +64,7 @@ fun ProductItem(product: Product, navController: NavController) {
                 contentDescription = product.name,
                 modifier = Modifier
                     .width(100.dp)
-                    .height(100.dp) // Điều chỉnh kích thước hình ảnh
+                    .height(100.dp)
                     .align(Alignment.CenterVertically)
             )
             Spacer(modifier = Modifier.width(8.dp))
@@ -79,9 +79,9 @@ fun ProductItem(product: Product, navController: NavController) {
                         Text("Screen", fontWeight = FontWeight.Bold)
                     }
                     Column(modifier = Modifier.weight(1f)) {
-                        Text(product.CPU)  // Đảm bảo `Product` có thuộc tính `cpu`
-                        Text(product.Graphicscard)  // Đảm bảo `Product` có thuộc tính `graphicsCard`
-                        Text(product.Screensize)  // Đảm bảo `Product` có thuộc tính `screenSize`
+                        Text(product.CPU)
+                        Text(product.Graphicscard)
+                        Text(product.Screensize)
                     }
                 }
             }
